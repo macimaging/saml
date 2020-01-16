@@ -28,6 +28,21 @@ func (a Attributes) Get(key string) string {
 	return v[0]
 }
 
+func (a Attributes) String() string {
+	result := ""
+	for k, v := range a {
+		result += ";key: " + k + "values: "
+		for _, e := range v {
+			result += e + ","
+		}
+	}
+	return result
+}
+
+func (a AuthorizationToken) String() string {
+	return "jwtID:" + a.StandardClaims.Id + "attribute:" + a.Attributes.String()
+}
+
 type indexType int
 
 const tokenIndex indexType = iota
