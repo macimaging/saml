@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/crewjam/saml"
-	"github.com/crewjam/saml/logger"
+	"github.com/macimaging/saml"
+	"github.com/macimaging/saml/logger"
 )
 
 // Options represents the parameters for creating a new middleware
