@@ -1,4 +1,4 @@
-module github.com/macimaging/saml
+module github.com/crewjam/saml
 
 go 1.13
 
