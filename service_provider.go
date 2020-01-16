@@ -19,8 +19,8 @@ import (
 	dsig "github.com/russellhaering/goxmldsig"
 	"github.com/russellhaering/goxmldsig/etreeutils"
 
-	"github.com/crewjam/saml/logger"
-	"github.com/crewjam/saml/xmlenc"
+	"github.com/macimaging/saml/logger"
+	"github.com/macimaging/saml/xmlenc"
 )
 
 // NameIDFormat is the format of the id
@@ -812,7 +812,7 @@ func (sp *ServiceProvider) nameIDFormat() string {
 	switch sp.AuthnNameIDFormat {
 	case "":
 		// To maintain library back-compat, use "transient" if unset.
-		nameIDFormat = string(TransientNameIDFormat)
+		nameIDFormat = string(EmailAddressNameIDFormat)
 	case UnspecifiedNameIDFormat:
 		// Spec defines an empty value as "unspecified" so don't set one.
 	default:

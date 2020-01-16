@@ -21,9 +21,9 @@ import (
 	"github.com/dgrijalva/jwt-go"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/crewjam/saml/logger"
-	"github.com/crewjam/saml/testsaml"
-	"github.com/crewjam/saml/xmlenc"
+	"github.com/macimaging/saml/logger"
+	"github.com/macimaging/saml/testsaml"
+	"github.com/macimaging/saml/xmlenc"
 )
 
 type IdentityProviderTest struct {
